@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+:root{
+    --text-color--:#DF9270;
+    --text-color-blend: #dd8fec;
+    --back-up-color: #577ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open-sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(../dicoding1/asset/bear.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    padding: 2rem  5rem  2rem  5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    font-size: 27px;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+li a{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.6s;
+}
+
+li a:hover{
+    background-color: var(--text-color--);
+}
+.active{
+    background-color: var(--text-color--);
+}
+button{
+    border: 2px var(--back-up-color);
+    background: transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--back-up-color);
+    cursor: pointer;
+    transition: 0.6s;
+}
+button:hover{
+    background-color: var(--text-color-blend);
+    color: #0000;
+}
+
+<!---------------------->
+.home-content{
+    padding:2rem 5rem 2rem 5rem;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+}
+
+.home-container{
+    align-items: center;
+    width: 600px;
+}
+.home-container h1{
+    color:#fff;
+    font-size: 5rem;
+    padding-bottom: 30px;
+}
+.home-container p{
+    color:#fff;
+    padding-bottom: 20px;
+}
+#explore{
+    margin-left: 20px;
+}
